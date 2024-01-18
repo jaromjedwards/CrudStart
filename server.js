@@ -19,7 +19,7 @@ app.get('/listUsers', function (req, res) {
     });
  })
 
- app.post('/addUser', function (req, res) {
+ app.get('/addUser', function (req, res) {
     // First read existing users.
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
